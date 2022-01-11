@@ -1,7 +1,6 @@
 import NextDocument, { Html, Head, Main, NextScript } from 'next/document';
-import type { DocumentProps } from 'next/document';
 
-export default function CustomDocument(props: DocumentProps): JSX.Element {
+export default function CustomDocument(): JSX.Element {
   return (
     <Html className="dark">
       <Head>
