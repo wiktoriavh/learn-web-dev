@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { forwardRef, LegacyRef } from 'react';
+import type { LegacyRef } from 'react';
+import { forwardRef } from 'react';
 
 import KoFiLogo from '../public/Ko-fi_Icon_RGBforDarkBg.png';
 import { Logo } from './Logo';
@@ -8,7 +9,7 @@ import { Logo } from './Logo';
 export function Footer(): JSX.Element {
   return (
     <footer className="py-6">
-      <div className="flex flex-row justify-between items-end ">
+      <div className="flex flex-col md:flex-row gap-4 justify-between md:items-end ">
         <div className="px-6 flex-1">
           <ul>
             <Item>
@@ -47,14 +48,14 @@ export function Footer(): JSX.Element {
             </Item>
           </ul>
         </div>
-        <div className="self-center flex-1 flex flex-row justify-center items-center">
+        <div className="self-center flex-1 flex flex-row justify-center items-center order-first md:order-none">
           <Link href="https://github.com/braweria">
             <a>
               <Logo />
             </a>
           </Link>
         </div>
-        <div className="px-6 flex-1 text-right">
+        <div className="px-6 flex-1 md:text-right">
           <p className="text-sm text-light-grey">
             &copy; {new Date().getFullYear()}{' '}
             <Link href="https://github.com/braweria" passHref>

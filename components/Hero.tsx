@@ -1,6 +1,6 @@
 export function Hero(): JSX.Element {
   return (
-    <div className="h-[35rem] py-28 bg-gradient-radial-top from-[#581C87] via-[#5B1535] to-dark ">
+    <div className="h-[35rem] py-28 px-6 bg-gradient-radial-top from-[#581C87] via-[#5B1535] to-dark ">
       <div className="md:container mx-auto">
         <h1 className="text-6xl text-pink-50 text-center font-light ">
           Learn Web Development from Scratch
