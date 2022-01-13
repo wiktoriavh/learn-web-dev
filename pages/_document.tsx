@@ -16,7 +16,7 @@ export default function CustomDocument(): JSX.Element {
           rel="stylesheet"
         />
       </Head>
-      <body>
+      <body className="bg-dark text-light-grey">
         <Main />
         <NextScript />
       </body>
