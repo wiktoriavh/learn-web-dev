@@ -13,8 +13,8 @@ export function Footer(): JSX.Element {
         <div className="px-6 flex-1">
           <ul>
             <Item>
-              <Link href="https://github.com/Braweria" passHref>
-                <RedLink>GitHub</RedLink>
+              <Link href="https://github.com/Braweria/learn-web-dev" passHref>
+                <RedLink>GitHub Repository</RedLink>
               </Link>
             </Item>
             <Item>
@@ -57,11 +57,12 @@ export function Footer(): JSX.Element {
         </div>
         <div className="px-6 flex-1 md:text-right">
           <p className="text-sm text-light-grey">
-            &copy; {new Date().getFullYear()}{' '}
+            Created by{' '}
             <Link href="https://github.com/braweria" passHref>
-              <RedLink>Braweria</RedLink>
+              <RedLink>Wiktoria &quot;Braweria&quot; Mielcarek</RedLink>
             </Link>
           </p>
+          <p className="text-sm text-light-grey">&copy; {new Date().getFullYear()}</p>
           <Link href="/privacy">
             <a className="text-light-red hover:underline-offset-4 hover:underline text-sm">
               Privacy
