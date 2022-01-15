@@ -7,6 +7,7 @@ export type Entry = {
 
 type Source = {
   type: string;
+  description?: string;
   entries: Entry[];
 };
 
@@ -176,6 +177,7 @@ const intermediateManaged: Source = {
 
 const advancedFrameworks: Source = {
   type: 'Advanced: Frameworks',
+  description: 'Frameworks are ordered in job availability, but this is largely dependent on where you live.',
   entries: [
     {
       name: 'React',
