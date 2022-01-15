@@ -1,10 +1,15 @@
+import Head from 'next/head';
 import Link from 'next/link';
+
 import { Footer } from '../components/Footer';
 import { Hero } from '../components/Hero';
 
 export default function Privacy(): JSX.Element {
   return (
     <>
+      <Head>
+        <title>Privacy - Learn Web Development</title>
+      </Head>
       <GoBack />
       <Hero title="Privacy" />
       <main className="md:w-[500px] mx-auto mb-20 w-auto px-6 md:px-0">
