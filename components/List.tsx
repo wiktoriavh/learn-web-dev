@@ -23,6 +23,9 @@ export function List({
                 {entry.name}
               </a>
             </Link>
+            {entry.description && (
+              <p className="pl-4  my-2 mb-4">{entry.description}</p>
+            )}
           </li>
         ))}
       </ul>
