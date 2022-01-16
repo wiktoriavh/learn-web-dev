@@ -25,6 +25,11 @@ const beginner: Source = {
       by: 'MDN',
     },
     {
+      name: 'Code Editor: VS Code',
+      url: 'https://code.visualstudio.com',
+      by: 'Microsoft',
+    },
+    {
       name: 'Guide to Chromium DevTools',
       url: 'https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/',
       by: 'Microsoft',
@@ -95,6 +100,21 @@ const intermediateDeepen: Source = {
       url: 'https://docs.github.com/en/get-started',
       by: 'GitHub',
     },
+    {
+      name: "Tutorial: Node.js for Beginners",
+      url: 'https://docs.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-beginners-tutorial',
+      by: 'Microsoft',
+    },
+    {
+      name: "Getting started with Node.js",
+      url: "https://nodejs.org/en/docs/guides/getting-started-guide/",
+      by: "nodejs",
+    },
+    {
+      name: "Alternative to NPM: Yarn",
+      url: "https://classic.yarnpkg.com/en/docs/install/#windows-stable",
+      by: "Yarn",
+    }
   ],
 };
 
@@ -177,7 +197,8 @@ const intermediateManaged: Source = {
 
 const advancedFrameworks: Source = {
   type: 'Advanced: Frameworks',
-  description: 'Frameworks are ordered in job availability, but this is largely dependent on where you live.',
+  description:
+    'Frameworks are ordered in job availability, but this is largely dependent on where you live.',
   entries: [
     {
       name: 'React',
