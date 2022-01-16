@@ -4,7 +4,7 @@ export default function CustomDocument(): JSX.Element {
   return (
     <Html className="dark">
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/learn-web-dev-logo-favicon.svg" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
@@ -34,7 +34,10 @@ export default function CustomDocument(): JSX.Element {
         <meta property="og:url" content="https://learn-web-dev.vercel.app" />
         <meta property="og:site_name" content="Learn Web Development" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Learn Web Development from Scratch" />
+        <meta
+          property="og:title"
+          content="Learn Web Development from Scratch"
+        />
         <meta
           property="og:description"
           content="A compilation of resources from entry level coding to advanced development techniques, curated by one of the largest web development communities on Discord."
@@ -45,7 +48,10 @@ export default function CustomDocument(): JSX.Element {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@braweria" />
         <meta name="twitter:creator" content="@braweria" />
-        <meta name="twitter:title" content="Learn Web Development from Scratch" />
+        <meta
+          name="twitter:title"
+          content="Learn Web Development from Scratch"
+        />
         <meta property="twitter:domain" content="learn-web-dev.vercel.app" />
         <meta
           property="twitter:url"
