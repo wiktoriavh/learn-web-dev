@@ -5,16 +5,6 @@ export default function CustomDocument(): JSX.Element {
     <Html className="dark">
       <Head>
         <link rel="icon" href="/learn-web-dev-logo-favicon.svg" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="true"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
-          rel="stylesheet"
-        />
 
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -63,7 +53,7 @@ export default function CustomDocument(): JSX.Element {
         />
         <meta name="twitter:image" content="/learn-web-dev-og-image.png" />
       </Head>
-      <body className="bg-dark text-light-grey">
+      <body className="bg-black-800 text-black-100">
         <Main />
         <NextScript />
       </body>

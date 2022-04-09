@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 
 import { Footer } from '../components/Footer';
-import { Hero } from '../components/Hero';
+import { Hero } from '../components/Hero/Hero';
 
 export default function Privacy(): JSX.Element {
   return (
