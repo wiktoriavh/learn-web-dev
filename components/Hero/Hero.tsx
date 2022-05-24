@@ -1,5 +1,4 @@
 import clsx from 'clsx';
-import { useRef } from 'react';
 
 import styles from './Hero.module.css';
 
