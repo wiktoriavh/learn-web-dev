@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 228 228" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-  <g transform="matrix(1.54974,-0.101837,0.101837,1.54974,10.4028,-50.0148)">
-    <path d="M50.576,-18.044C64.676,-1.744 71.4,23.9 63.9,37.8C56.4,51.8 28.2,54.7 -0.3,54.9C-28.8,55.1 -57.6,52.5 -71.6,34.7C-85.6,17 -84.9,-15.8 -70.5,-32.2C-56.1,-48.7 -28,-48.8 -6.5,-45C15,-41.3 36.476,-34.344 50.576,-18.044Z" style="fill:rgb(88,28,135);fill-rule:nonzero;stroke:white;stroke-width:5"/>
-  </g>
-  <!-- <g transform="matrix(0.453307,0,0,0.453307,-163.619,-159.315)">
-          <text x="135.324px" y="333.926px" style="font-family:'OpenSans-Bold', 'Open Sans';font-weight:700;font-size:211.802px;fill:white;">L</text>
-          <text x="225.327px" y="333.926px" style="font-family:'OpenSans-Bold', 'Open Sans';font-weight:700;font-size:211.802px;fill:white;">W
-            <tspan x="415.27px " y="333.926px ">D</tspan>
-          </text>
-        </g> -->
+<!DOCTYPE svg>
+<svg width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M4.53275 3.01312C4.97432 2.51915 5.14513 1.77116 4.85996 1.38672C4.57458 0.999413 3.61238 0.969394 2.64601 1.01736C1.67965 1.06533 0.709355 1.19415 0.274511 1.73093C-0.160555 2.26484 -0.0637818 3.20404 0.460786 3.64717C0.985574 4.09316 1.93816 4.04308 2.65838 3.89361C3.37881 3.747 4.09118 3.50708 4.53275 3.01312Z" fill="#581C87" stroke="white" stroke-width="0.0340588" stroke-miterlimit="2" stroke-linejoin="round"/>
+  <clipPath id="clip0_406_437">
+    <rect width="5" height="5" fill="white"/>
+  </clipPath>
 </svg>
+
+
