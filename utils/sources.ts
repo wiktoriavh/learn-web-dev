@@ -18,51 +18,54 @@ const beginner: Source = {
       name: 'Getting Started with the Web',
       url: 'https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web',
       by: 'MDN',
+      description:
+        "Getting started with the web is a concise series introducing you to the practicalities of web development. You'll set up the tools you need to construct a simple webpage and publish your own simple code.",
     },
     {
       name: 'Front End Developer Learning Path',
       url: 'https://developer.mozilla.org/en-US/docs/Learn/Front-end_web_developer',
       by: 'MDN',
+      description:
+        'Structured course that will teach you all you need to know to become a front-end web developer.',
     },
     {
       name: 'Code Editor: VS Code',
       url: 'https://code.visualstudio.com',
       by: 'Microsoft',
+      description: 'Free. Built on open source. Runs everywhere.',
     },
     {
       name: 'Guide to Chromium DevTools',
       url: 'https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/',
       by: 'Microsoft',
+      description: 'Microsoft Edge DevTools documentation',
     },
     {
       name: 'Introduction to HTML',
       url: 'https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML',
       by: 'MDN',
+      description:
+        'Hyper Text Markup Language (HTML) is the standard markup language for creating web pages and web applications.',
     },
     {
       name: 'Introduction to CSS',
       url: 'https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps',
       by: 'MDN',
-    },
-    {
-      name: 'HTML',
-      url: 'https://developer.mozilla.org/en-US/docs/Learn/HTML',
-      by: 'MDN',
-    },
-    {
-      name: 'CSS',
-      url: 'https://developer.mozilla.org/en-US/docs/Glossary/CSS',
-      by: 'MDN',
+      description:
+        'Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language like HTML.',
     },
     {
       name: 'JavaScript',
       url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
       by: 'MDN',
+      description:
+        'JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat. JavaScript is a prototype-based, multi-paradigm, single-threaded, dynamic language, supporting object-oriented, imperative, and declarative (e.g. functional programming) styles.',
     },
     {
       name: 'Frontend Roadmap',
       url: 'https://roadmap.sh/frontend',
       by: 'Roadmap',
+      description: 'Step by step guide to becoming a modern frontend developer',
     },
   ],
 };
@@ -101,20 +104,20 @@ const intermediateDeepen: Source = {
       by: 'GitHub',
     },
     {
-      name: "Tutorial: Node.js for Beginners",
+      name: 'Tutorial: Node.js for Beginners',
       url: 'https://docs.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-beginners-tutorial',
       by: 'Microsoft',
     },
     {
-      name: "Getting started with Node.js",
-      url: "https://nodejs.org/en/docs/guides/getting-started-guide/",
-      by: "nodejs",
+      name: 'Getting started with Node.js',
+      url: 'https://nodejs.org/en/docs/guides/getting-started-guide/',
+      by: 'nodejs',
     },
     {
-      name: "Alternative to NPM: Yarn",
-      url: "https://classic.yarnpkg.com/en/docs/install/#windows-stable",
-      by: "Yarn",
-    }
+      name: 'Alternative to NPM: Yarn',
+      url: 'https://classic.yarnpkg.com/en/docs/install/#windows-stable',
+      by: 'Yarn',
+    },
   ],
 };
 
