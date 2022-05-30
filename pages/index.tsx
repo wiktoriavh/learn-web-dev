@@ -1,19 +1,9 @@
+import { Footer } from '@/Footer';
+import { Hero } from '@/Hero';
+import { List } from '@/List';
 import type { NextPage } from 'next';
-import dynamic from 'next/dynamic';
 import Head from 'next/head';
-
-import { Footer } from '../components/Footer';
-// import { Hero } from '../components/Hero/Hero';
-import { List } from '../components/List';
-import { sources } from '../utils/sources';
-
-const Hero = dynamic(
-  async () => {
-    const mod = await import('../components/Hero');
-    return mod.Hero;
-  },
-  { loading: () => null, ssr: false }
-);
+import { sources } from '~/sources';
 
 // eslint-disable-next-line react/function-component-definition
 const Home: NextPage = () => {

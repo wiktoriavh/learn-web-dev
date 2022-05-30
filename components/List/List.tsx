@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
-import type { Entry } from '../utils/sources';
-import { ListItem } from './ListItem/ListItem';
+import type { Entry } from '../../utils/sources';
+import { ListItem } from '../ListItem/ListItem';
 
 export function List({
   entries,

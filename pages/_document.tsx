@@ -53,7 +53,7 @@ export default function CustomDocument(): JSX.Element {
         />
         <meta name="twitter:image" content="/learn-web-dev-og-image.png" />
       </Head>
-      <body className="bg-black-800 text-black-100">
+      <body className="bg-black-900 text-black-100">
         <Main />
         <NextScript />
       </body>

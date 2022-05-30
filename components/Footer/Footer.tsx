@@ -3,8 +3,8 @@ import Link from 'next/link';
 import type { LegacyRef } from 'react';
 import { forwardRef } from 'react';
 
-import KoFiLogo from '../public/Ko-fi_Icon_RGBforDarkBg.png';
-import { Logo } from './Logo';
+import KoFiLogo from '../../public/Ko-fi_Icon_RGBforDarkBg.png';
+import { Logo } from '../Logo';
 
 export function Footer(): JSX.Element {
   return (
@@ -62,7 +62,9 @@ export function Footer(): JSX.Element {
               <RedLink>Wiktoria &quot;Braweria&quot; Mielcarek</RedLink>
             </Link>
           </p>
-          <p className="text-sm text-light-grey">&copy; {new Date().getFullYear()}</p>
+          <p className="text-sm text-light-grey">
+            &copy; {new Date().getFullYear()}
+          </p>
           <Link href="/privacy">
             <a className="text-light-red hover:underline-offset-4 hover:underline text-sm">
               Privacy
