@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  @apply scroll-smooth;
+}
+
 .bg-gradient-radial-top {
   background-image: radial-gradient(
     ellipse at top,
