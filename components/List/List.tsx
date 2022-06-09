@@ -14,7 +14,7 @@ export function List({
   description?: string;
 }): JSX.Element {
   return (
-    <section id={formatSlug(type)} className="container mb-20">
+    <section id={formatSlug(type)} className="mb-20">
       <h3 className="my-4 text-2xl font-bold text-center text-pink-400">
         {type}
       </h3>
