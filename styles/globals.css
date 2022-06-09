@@ -28,3 +28,7 @@
   opacity: 1;
   transform: translateX(0%);
 }
+
+.container {
+  @apply max-w-2xl mx-auto px-6 w-full;
+}
