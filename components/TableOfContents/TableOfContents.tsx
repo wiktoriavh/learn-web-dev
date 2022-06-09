@@ -52,10 +52,11 @@ export function TableOfContents({
                   />
                 </svg>
               </summary>
-              <menu className="p-2 space-y-2 text-pink-200 list-inside transition -translate-y-2 opacity-0 group-open:translate-y-0 group-open:opacity-100">
+              <menu className="p-2 space-y-2 text-pink-200 list-inside opacity-0 group-open:opacity-100">
                 {source.entries.map((entry) => (
                   <li key={entry.name}>
                     <Link href={`#${formatSlug(entry.name)}`}>
+                      {/* As clean as this is, we might want to use a JS-based approach for the scrolling so that we can add a slight offset*/}
                       <a className="transition-[margin] block hover:ml-2">
                         {entry.name}
                       </a>
