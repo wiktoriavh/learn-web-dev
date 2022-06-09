@@ -32,3 +32,12 @@
 .container {
   @apply max-w-2xl mx-auto px-6 w-full;
 }
+
+/* Remove the ▶ icon from details summary */
+details {
+  @apply list-none;
+}
+summary::marker,
+summary::-webkit-details-marker {
+  @apply hidden content-none;
+}
