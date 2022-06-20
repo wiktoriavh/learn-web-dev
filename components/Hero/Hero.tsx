@@ -10,17 +10,22 @@ export function Hero({
   subtitle?: string;
 }): JSX.Element {
   return (
-    <div className={clsx('min-h-96 max-h-screen py-28 px-6 mb-6 relative', styles.gradientBackground)}>
-      <div className="md:container mx-auto">
-        <h1 className="text-5xl text-pink-50 text-center font-light ">
+    <section
+      className={clsx(
+        'max-h-screen py-10 px-6 md:px-auto',
+        styles.gradientBackground
+      )}
+    >
+      <div className="md:w-[700px] md:container mx-auto flex flex-col gap-10">
+        <h1 className="text-4xl md:text-7xl text-pink-50 text-center font-bold ">
           {title}
         </h1>
         {subtitle && (
-          <h2 className="text-2xl md:text-center text-pink-50 my-20 md:w-3/5 mx-auto">
+          <h2 className="text-md md:text-2xl text-center text-pink-50 mx-auto">
             {subtitle}
           </h2>
         )}
       </div>
-    </div>
+    </section>
   );
 }
