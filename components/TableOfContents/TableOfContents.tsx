@@ -84,7 +84,10 @@ export function TableOfContents({
                   >
                     <Link href={`#${formatSlug(entry.name)}`}>
                       {/* As clean as this is, we might want to use a JS-based approach for the scrolling so that we can add a slight offset*/}
-                      <a className="transition-[margin] block hover:ml-2">
+                      <a
+                        className="transition-[margin] block hover:ml-2"
+                        tabIndex={i === active ? 0 : -1}
+                      >
                         {entry.name}
                       </a>
                     </Link>
