@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { formatSlug } from '~/format';
@@ -7,7 +8,7 @@ import type { TableOfContentsProps } from './types';
 export function TableOfContents({
   sources,
 }: TableOfContentsProps): JSX.Element {
-  const [active, setActive] = useState(0);
+  const [active, setActive] = useState(-1);
 
   useEffect(() => {
     const activeSource = sources.findIndex((s) =>
@@ -27,21 +28,32 @@ export function TableOfContents({
       <menu className="space-y-1">
         {sources.map((source, i) => (
           <li key={source.type}>
-            <details
-              open={i === active}
-              onToggle={({ target }) => {
-                if ((target as HTMLDetailsElement).open) {
-                  setActive(i);
-                }
-              }}
-              className="group text-pink-200 open:text-pink-400 open:p-2 transition-[padding] open:border border-white rounded"
+            <div
+              className={clsx(
+                'transition-[padding,margin,border] border rounded',
+                i === active
+                  ? 'p-2 text-pink-400 border-white'
+                  : 'mx-2 text-pink-200 border-transparent'
+              )}
             >
-              <summary className="flex items-center justify-between gap-2 p-2 rounded cursor-pointer hover:bg-black-800 group-open:bg-black-800 open">
+              <button
+                type="button"
+                onClick={() => {
+                  setActive(i === active ? -1 : i);
+                }}
+                className={clsx(
+                  'flex w-full items-center justify-between gap-2 p-2 rounded cursor-pointer hover:bg-black-800',
+                  i === active && 'bg-black-800'
+                )}
+              >
                 {source.type}
 
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-5 h-5 opacity-0 group-open:rotate-180 group-open:opacity-100 group-hover:opacity-100"
+                  className={clsx(
+                    'w-5 h-5 group-open:rotate-180 group-hover:opacity-100',
+                    i === active ? 'opacity-100' : 'opacity-0'
+                  )}
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
@@ -51,10 +63,25 @@ export function TableOfContents({
                     clipRule="evenodd"
                   />
                 </svg>
-              </summary>
-              <menu className="p-2 space-y-2 text-pink-200 list-inside opacity-0 group-open:opacity-100">
+              </button>
+              <menu
+                className={clsx(
+                  'p-2 text-pink-200 list-inside duration-300',
+                  i === active
+                    ? 'opacity-100 py-2 transition-[padding,opacity]'
+                    : 'opacity-0 py-0 transition-[padding] pointer-events-none'
+                )}
+              >
                 {source.entries.map((entry) => (
-                  <li key={entry.name}>
+                  <li
+                    className={clsx(
+                      'transition-[line-height,margin] duration-300',
+                      i === active
+                        ? 'leading-normal mt-2 first:mt-0'
+                        : 'leading-[0] mt-0'
+                    )}
+                    key={entry.name}
+                  >
                     <Link href={`#${formatSlug(entry.name)}`}>
                       {/* As clean as this is, we might want to use a JS-based approach for the scrolling so that we can add a slight offset*/}
                       <a className="transition-[margin] block hover:ml-2">
@@ -64,7 +91,7 @@ export function TableOfContents({
                   </li>
                 ))}
               </menu>
-            </details>
+            </div>
           </li>
         ))}
       </menu>
