@@ -1,7 +1,5 @@
-import Link from 'next/link';
-
-import type { Entry } from '../../utils/sources';
-import { ListItem } from '../ListItem/ListItem';
+import { ListItem } from '@/ListItem';
+import type { Entry } from '~/sources';
 
 export function List({
   entries,
@@ -21,14 +19,6 @@ export function List({
       <ul>
         {entries?.map((entry) => (
           <li key={entry.name} className="my-2 text-lg">
-            {/* <Link href={entry.url}>
-              <a className="text-pink-200 hover:underline hover:underline-offset-2">
-                {entry.name}
-              </a>
-            </Link>
-            {entry.description && (
-              <p className="pl-4 my-2 mb-4">{entry.description}</p>
-            )} */}
             <ListItem
               title={entry.name}
               url={entry.url}
