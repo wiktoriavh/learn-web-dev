@@ -5,7 +5,7 @@ export type Entry = {
   by: string;
 };
 
-type Source = {
+export type Source = {
   type: string;
   description?: string;
   entries: Entry[];

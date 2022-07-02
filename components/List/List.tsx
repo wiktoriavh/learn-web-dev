@@ -1,7 +1,6 @@
-import Link from 'next/link';
-
-import type { Entry } from '../../utils/sources';
-import { ListItem } from '../ListItem/ListItem';
+import { ListItem } from '@/ListItem';
+import { formatSlug } from '~/format';
+import type { Entry } from '~/sources';
 
 export function List({
   entries,
@@ -13,7 +12,7 @@ export function List({
   description?: string;
 }): JSX.Element {
   return (
-    <section className="container mb-20">
+    <section id={formatSlug(type)} className="mb-20">
       <h3 className="my-4 text-2xl font-bold text-center text-pink-400">
         {type}
       </h3>
@@ -21,14 +20,6 @@ export function List({
       <ul>
         {entries?.map((entry) => (
           <li key={entry.name} className="my-2 text-lg">
-            {/* <Link href={entry.url}>
-              <a className="text-pink-200 hover:underline hover:underline-offset-2">
-                {entry.name}
-              </a>
-            </Link>
-            {entry.description && (
-              <p className="pl-4 my-2 mb-4">{entry.description}</p>
-            )} */}
             <ListItem
               title={entry.name}
               url={entry.url}
