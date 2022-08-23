@@ -1,0 +1,7 @@
+on: [push]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+    - run: npx ts-node -e "import { sources } from './utils/sources'; console.log(JSON.stringify(sources));" > sources.json
+    - run: ./.github/workflows/check.py sources.json

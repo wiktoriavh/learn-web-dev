@@ -40,3 +40,4 @@ yarn-error.log*
 build
 coverage
 .next
+sources.json
