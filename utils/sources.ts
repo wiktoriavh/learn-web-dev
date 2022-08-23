@@ -273,8 +273,8 @@ const advancedCiCd: Source = {
   entries: [
     {
       name: 'What is CI/CD',
-      url: 'https://www.digitalocean.com/community/tutorials/what-is-continuous-integration-continuous-delivery-ci-cd',
-      by: 'DigitalOcean',
+      url: 'https://about.gitlab.com/topics/ci-cd/',
+      by: 'GitLab',
     },
     {
       name: 'GitHub Actions',
