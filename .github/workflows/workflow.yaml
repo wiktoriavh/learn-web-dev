@@ -1,4 +1,6 @@
-on: [push]
+on:
+  push:
+    paths: [ "utils/sources.ts", ".github/workflows/**" ]
 jobs:
   check:
     runs-on: ubuntu-latest
