@@ -20,6 +20,7 @@ def main():
                     print(f"{cat['type']} => {entry['name']}\n{url} responded with {e}")
     return count
 
+
 if __name__ == '__main__':
     count = main()
     if count > 0:
