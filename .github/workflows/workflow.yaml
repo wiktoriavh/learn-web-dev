@@ -1,0 +1,13 @@
+on:
+  push:
+    paths: [ "utils/sources.ts", ".github/workflows/**" ]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+    - name: Extract sources to JSON
+      run: npx ts-node -e "import { sources } from './utils/sources'; console.log(JSON.stringify(sources));" > sources.json
+    - name: Check sources
+      run: ./.github/workflows/check.py sources.json
