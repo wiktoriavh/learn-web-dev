@@ -1,6 +1,5 @@
-from email import header
+#!/usr/bin/env python3
 import json
-
 import sys
 import json
 import urllib.request
