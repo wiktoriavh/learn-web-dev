@@ -12,7 +12,7 @@ def main():
         for cat in sources:
             for entry in cat['entries']:
                 url = entry['url']
-                headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:103.0) Gecko/20100101 Firefox/103.0'}
+                headers = {'User-Agent': 'learn-web-dev.vercel.app'}
                 req = urllib.request.Request(url, headers=headers)
                 try: urllib.request.urlopen(req)
                 except urllib.error.URLError as e: 
