@@ -1,3 +1,4 @@
+import { Card } from '@/Card';
 import { ListItem } from '@/ListItem';
 import { formatSlug } from '~/format';
 import type { Entry } from '~/sources';
@@ -17,10 +18,10 @@ export function List({
         {type}
       </h3>
       {description && <p className="pb-2 text-lg">{description}</p>}
-      <ul>
+      <ul className="grid grid-cols-4 gap-4 ">
         {entries?.map((entry) => (
           <li key={entry.name} className="my-2 text-lg">
-            <ListItem
+            <Card
               title={entry.name}
               url={entry.url}
               description={entry.description}
