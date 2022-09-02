@@ -34,7 +34,7 @@
 }
 
 .container {
-  @apply max-w-2xl mx-auto px-6 w-full;
+  @apply max-w-5xl mx-auto px-6 w-full;
 }
 
 /* Remove the ▶ icon from details summary */

@@ -1,0 +1,23 @@
+.cardBelow {
+  background: linear-gradient(
+    205deg,
+    rgba(242, 117, 207, 1),
+    rgba(173, 39, 136, 0)
+  );
+}
+
+.cardBelow:hover {
+  background: rgba(242, 117, 207, 1);
+}
+
+.card {
+  --degree: 137deg;
+  background: linear-gradient(var(--degree), #171514 24.07%, #583243 81.13%);
+  box-shadow: 0px 16px 60px rgba(103, 9, 87, 0.3);
+  backdrop-filter: blur(20px);
+}
+
+.description {
+  line-clamp: 3;
+  text-overflow: ellipsis;
+}

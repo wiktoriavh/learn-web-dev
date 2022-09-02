@@ -19,7 +19,7 @@ const beginner: Source = {
       url: 'https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web',
       by: 'MDN',
       description:
-        "Getting started with the web is a concise series introducing you to the practicalities of web development. You'll set up the tools you need to construct a simple webpage and publish your own simple code.",
+        "Getting started with the web is a concise series introducing you to the practicalities of web development.",
     },
     {
       name: 'Front End Developer Learning Path',
