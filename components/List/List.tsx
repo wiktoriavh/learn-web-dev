@@ -1,7 +1,8 @@
 import { Card } from '@/Card';
-import { ListItem } from '@/ListItem';
 import { formatSlug } from '~/format';
 import type { Entry } from '~/sources';
+
+import styles from './List.module.css';
 
 export function List({
   entries,
@@ -14,7 +15,9 @@ export function List({
 }): JSX.Element {
   return (
     <section id={formatSlug(type)} className="mb-20">
-      <h3 className="my-4 text-2xl font-bold text-center text-pink-400">
+      <h3
+        className={`${styles.sectionHeading} my-4 text-2xl font-bold text-pink-400 w-fit`}
+      >
         {type}
       </h3>
       {description && <p className="pb-2 text-lg">{description}</p>}

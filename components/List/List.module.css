@@ -1,0 +1,5 @@
+.sectionHeading {
+  background: linear-gradient(90deg, #f18b74 0%, #f472b6 51.56%, #7b61ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

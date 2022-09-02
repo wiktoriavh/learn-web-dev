@@ -1,16 +1,23 @@
-.card {
+.cardBelow {
   background: linear-gradient(
-    137.13deg,
-    rgba(239, 93, 168, 0.0072) 24.07%,
-    rgba(239, 93, 168, 0.24) 81.13%
+    205deg,
+    rgba(242, 117, 207, 1),
+    rgba(173, 39, 136, 0)
   );
-  box-shadow: 0px 16px 50px rgba(103, 9, 87, 0.3);
+}
+
+.cardBelow:hover {
+  background: rgba(242, 117, 207, 1);
+}
+
+.card {
+  --degree: 137deg;
+  background: linear-gradient(var(--degree), #171514 24.07%, #583243 81.13%);
+  box-shadow: 0px 16px 60px rgba(103, 9, 87, 0.3);
   backdrop-filter: blur(20px);
-  border-image: linear-gradient(1.55turn, #fbcfe8, #fbcfe800 75%) 10 / 1;
 }
 
 .description {
   line-clamp: 3;
-  -webkit-box-orient: vertical;
   text-overflow: ellipsis;
 }
