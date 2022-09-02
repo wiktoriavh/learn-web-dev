@@ -27,7 +27,7 @@ export function List({
             <Card
               title={entry.name}
               url={entry.url}
-              description={entry.description}
+              description={entry.description ?? ''}
             />
           </li>
         ))}
