@@ -356,6 +356,27 @@ const additional: Source = {
   ],
 };
 
+const internetp: Source = {
+  type: 'Internet Protocol',
+  entries: [
+    {
+      name: 'What is IP?',
+      url: 'https://www.javatpoint.com/ip',
+      by: 'JavaTPoint',
+    },
+    {
+      name: 'Types of IP?',
+      url: 'https://www.usg.edu/galileo/skills/unit07/internet07_03.phtml',
+      by: 'LibraryLearning',
+    },
+    {
+      name: 'Internet ProtocolP?',
+      url: 'https://www.ibm.com/docs/en/aix/7.1?topic=protocols-internet-protocol',
+      by: 'IBM',
+    },
+  ],
+};
+
 export const sources: Source[] = [
   beginner,
   intermediateDeepen,
@@ -366,4 +387,5 @@ export const sources: Source[] = [
   advancedCiCd,
   usefullTools,
   additional,
+  internetp
 ];
