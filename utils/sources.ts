@@ -356,6 +356,37 @@ const additional: Source = {
   ],
 };
 
+const url: Source = {
+  type: 'URL',
+  entries: [
+    {
+      name: 'What is URL?',
+      url: 'https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_URL',
+      by: 'MDN',
+    },
+    {
+      name: 'What is URL?',
+      url: 'https://www.techtarget.com/searchnetworking/definition/URL',
+      by: 'Tech Target',
+    },
+    {
+      name: 'What is URL?',
+      url: 'https://www.techtarget.com/searchnetworking/definition/URL',
+      by: 'Tech Target',
+    },
+    {
+      name: 'What is URL?',
+      url: 'https://docs.oracle.com/javase/tutorial/networking/urls/definition.html',
+      by: 'Oracle Java Documentation',
+    },
+    {
+      name: 'Why does URL matters for SEO?',
+      url: 'https://moz.com/learn/seo/url',
+      by: 'MOZ',
+    },
+  ],
+};
+
 export const sources: Source[] = [
   beginner,
   intermediateDeepen,
@@ -366,4 +397,5 @@ export const sources: Source[] = [
   advancedCiCd,
   usefullTools,
   additional,
+  URL,
 ];
