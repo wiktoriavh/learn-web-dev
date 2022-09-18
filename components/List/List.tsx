@@ -21,7 +21,7 @@ export function List({
         {type}
       </h3>
       {description && <p className="pb-2 text-lg">{description}</p>}
-      <ul className="grid grid-cols-4 gap-4 ">
+      <ul className="grid md:grid-cols-4 md:gap-4 ">
         {entries?.map((entry) => (
           <li key={entry.name} className="my-2 text-lg">
             <Card
