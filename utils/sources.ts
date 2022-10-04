@@ -360,17 +360,17 @@ const basicsOfInternet: Source = {
   type: 'Basics of the Internet',
   entries: [
     {
-      name: ' Introduction to Domain Name System (DNS)',
+      name: 'Introduction to Domain Name System (DNS)',
       url: 'https://www.cloudflare.com/en-gb/learning/dns/what-is-dns/',
       by: 'CloudFlare',
     },
     {
-      name: ' Indepth explanation of the DNS',
+      name: 'Indepth explanation of the DNS',
       url: 'https://www.techtarget.com/searchnetworking/definition/domain-name-system',
       by: 'Tech Target',
     },
     {
-      name: ' Introduction to the Intenet Protocol (IP)',
+      name: 'Introduction to the Intenet Protocol (IP)',
       url: 'https://www.cloudflare.com/en-gb/learning/network-layer/internet-protocol/',
       by: 'CloudFlare',
     },
