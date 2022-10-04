@@ -19,7 +19,7 @@ const beginner: Source = {
       url: 'https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web',
       by: 'MDN',
       description:
-        "Getting started with the web is a concise series introducing you to the practicalities of web development.",
+        'Getting started with the web is a concise series introducing you to the practicalities of web development.',
     },
     {
       name: 'Front End Developer Learning Path',
@@ -359,6 +359,11 @@ const additional: Source = {
 const basicsOfInternet: Source = {
   type: 'Basics of the Internet',
   entries: [
+    {
+      name: 'What is the World Wide Web?',
+      url: 'https://www.britannica.com/topic/World-Wide-Web',
+      by: 'Britannica',
+    },
     {
       name: 'Introduction to Domain Name System (DNS)',
       url: 'https://www.cloudflare.com/en-gb/learning/dns/what-is-dns/',
