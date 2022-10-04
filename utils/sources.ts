@@ -356,113 +356,44 @@ const additional: Source = {
   ],
 };
 
-const info: Source = {
-  type: 'Information',
+const basicsOfInternet: Source = {
+  type: 'Basics of the Internet',
   entries: [
     {
-      name: 'What is DNS?',
-      url: 'https://www.techtarget.com/searchnetworking/definition/domain-name-system',
-      by: 'Tech Target',
-    },
-    {
-      name: 'How DNS works?',
+      name: ' Introduction to Domain Name System (DNS)',
       url: 'https://www.cloudflare.com/en-gb/learning/dns/what-is-dns/',
       by: 'CloudFlare',
     },
     {
-      name: 'DNS',
-      url: 'https://www.javatpoint.com/computer-network-dns',
-      by: 'JavaTPoint',
+      name: ' Indepth explanation of the DNS',
+      url: 'https://www.techtarget.com/searchnetworking/definition/domain-name-system',
+      by: 'Tech Target',
     },
     {
-      name: 'DNS in Application Layer',
-      url: 'https://www.geeksforgeeks.org/domain-name-system-dns-in-application-layer/',
-      by: 'Geeks For Geeks',
-    },
-    {
-      name: 'More About DNS',
-      url: 'https://www.infoblox.com/glossary/domain-name-system-dns/',
-      by: 'Infoblox',
-    },
-    {
-      name: 'What is Internet Protocols?(IP)',
+      name: ' Introduction to the Intenet Protocol (IP)',
       url: 'https://www.cloudflare.com/en-gb/learning/network-layer/internet-protocol/',
       by: 'CloudFlare',
     },
     {
-      name: 'Types of Internet Protocols',
+      name: 'Definitions of different type of Protocols',
       url: 'https://www.geeksforgeeks.org/types-of-internet-protocols/',
       by: 'Geeks For Geeks',
     },
     {
-      name: 'Internet Protocols',
-      url: 'https://www.techtarget.com/searchunifiedcommunications/definition/Internet-Protocol',
-      by: 'Tech Targets',
-    },
-    {
-      name: 'What is IP?',
-      url: 'https://www.javatpoint.com/ip',
-      by: 'JavaTPoint',
-    },
-    {
-      name: 'Types of IP',
-      url: 'https://www.usg.edu/galileo/skills/unit07/internet07_03.phtml',
-      by: 'Library Learning',
-    },
-    {
-      name: 'How does Web Browsers work?',
-      url: 'https://medium.com/@monica1109/how-does-web-browsers-work-c95ad628a509#:~:text=High%2Dlevel%20architecture%20of%20browser&text=The%20Browser%20Engine%3A%20The%20browser,and%20manipulates%20the%20rendering%20engine.',
-      by: 'Medium',
-    },
-    {
-      name: 'How browsers work?',
+      name: 'Internal Operations of Browser Engines',
       url: 'https://web.dev/howbrowserswork/',
       by: 'web.dev',
-    },
-    {
-      name: 'How browsers work?',
-      url: 'https://www.freecodecamp.org/news/web-application-security-understanding-the-browser-5305ed2f1dac/',
-      by: 'Free Code camp',
-    },
-    {
-      name: 'How Browser works?',
-      url: 'https://dev.to/arikaturika/how-web-browsers-work-part-1-with-illustrations-1nid',
-      by: 'Dev',
-    },
-    {
-      name: 'Journey of a web page',
-      url: 'https://dev.to/gitpaulo/journey-of-a-web-page-how-browsers-work-10co',
-      by: 'Dev',
-    },
-    {
-      name: 'What are Web Standards?',
-      url: 'https://www.elcom.com.au/resources/blog/web-standards#:~:text=Web%20Standards%20is%20defined%20as,web%20sites%20and%20web%20applications.',
-      by: 'Elcom',
-    },
-    {
-      name: 'Standards',
-      url: 'https://www.w3.org/standards/',
-      by: 'W3C',
     },
     {
       name: 'Web Standards: the what, the why, and the how?',
       url: 'https://www.smashingmagazine.com/2019/01/web-standards-guide/',
       by: 'Smashing',
     },
-    {
-      name: 'Web Standards',
-      url: 'https://www.keycdn.com/blog/web-standards',
-      by: 'Keycdn',
-    },
-    {
-      name: 'Web Standard: why do we need it?',
-      url: 'https://www.webdesignerdepot.com/2020/04/what-are-web-standards-and-do-we-really-need-them/',
-      by: 'WebDesignerDepot',
-    },
   ],
 };
 
 export const sources: Source[] = [
+  basicsOfInternet,
   beginner,
   intermediateDeepen,
   intermediateStatic,
@@ -472,5 +403,4 @@ export const sources: Source[] = [
   advancedCiCd,
   usefullTools,
   additional,
-  info,
 ];
