@@ -268,7 +268,8 @@ const advancedStates: Source = {
     {
       name: 'Pinia',
       url: 'https://pinia.vuejs.org/',
-      by: 'Vue'
+      by: 'Vue',
+    }
   ],
 };
 
