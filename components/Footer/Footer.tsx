@@ -13,36 +13,32 @@ export function Footer(): JSX.Element {
         <div className="px-6 flex-1">
           <ul>
             <Item>
-              <Link href="https://github.com/Braweria/learn-web-dev" passHref>
-                <RedLink>GitHub Repository</RedLink>
-              </Link>
+              <RedLink href="https://github.com/Braweria/learn-web-dev">
+                GitHub Repository
+              </RedLink>
             </Item>
             <Item>
-              <Link
-                href="https://www.linkedin.com/in/wiktoria-mielcarek/"
-                passHref
-              >
-                <RedLink>LinkedIn</RedLink>
-              </Link>
+              <RedLink href="https://www.linkedin.com/in/wiktoria-mielcarek/">
+                LinkedIn
+              </RedLink>
             </Item>
             <Item>
-              <Link href="https://twitter.com/braweria" passHref>
-                <RedLink>Twitter</RedLink>
-              </Link>
+              <RedLink href="https://twitter.com/braweria">Twitter</RedLink>
             </Item>
             <Item>
               <div className="rounded-md bg-light-red w-fit pr-3 pl-1 hover:opacity-80">
-                <Link href="https://ko-fi.com/braweria">
-                  <a className="flex flex-row items-center gap-4 font-bold ">
-                    <Image
-                      src={KoFiLogo}
-                      alt="Ko-fi"
-                      placeholder="blur"
-                      height={40}
-                      width={40}
-                    />{' '}
-                    Support Me on Ko-fi
-                  </a>
+                <Link
+                  href="https://ko-fi.com/braweria"
+                  className="flex flex-row items-center gap-4 font-bold "
+                >
+                  <Image
+                    src={KoFiLogo}
+                    alt="Ko-fi"
+                    placeholder="blur"
+                    height={40}
+                    width={40}
+                  />{' '}
+                  Support Me on Ko-fi
                 </Link>
               </div>
             </Item>
@@ -50,25 +46,24 @@ export function Footer(): JSX.Element {
         </div>
         <div className="self-center flex-1 flex flex-row justify-center items-center order-first md:order-none">
           <Link href="https://github.com/braweria">
-            <a>
-              <Logo />
-            </a>
+            <Logo />
           </Link>
         </div>
         <div className="px-6 flex-1 md:text-right">
           <p className="text-sm text-light-grey">
             Created by{' '}
-            <Link href="https://github.com/braweria" passHref>
-              <RedLink>Wiktoria &quot;Braweria&quot; Mielcarek</RedLink>
-            </Link>
+            <RedLink href="https://github.com/braweria">
+              Wiktoria &quot;Braweria&quot; Mielcarek
+            </RedLink>
           </p>
           <p className="text-sm text-light-grey">
             &copy; {new Date().getFullYear()}
           </p>
-          <Link href="/privacy">
-            <a className="text-light-red hover:underline-offset-4 hover:underline text-sm">
-              Privacy
-            </a>
+          <Link
+            href="/privacy"
+            className="text-light-red hover:underline-offset-4 hover:underline text-sm"
+          >
+            Privacy
           </Link>
         </div>
       </div>
@@ -80,23 +75,21 @@ function Item({ children }: { children: JSX.Element }): JSX.Element {
   return <li className="my-2">{children}</li>;
 }
 
-function CustomLink(
-  {
-    children,
-    ...rest
-  }: {
-    children: JSX.Element | string;
-  },
-  ref: LegacyRef<HTMLAnchorElement> | undefined
-): JSX.Element {
+function RedLink({
+  children,
+  href,
+  ...rest
+}: {
+  children: JSX.Element | string;
+  href: string;
+}): JSX.Element {
   return (
-    <a
-      ref={ref}
+    <Link
+      href={href}
       {...rest}
       className="text-light-red hover:underline-offset-4 hover:underline"
     >
       {children}
-    </a>
+    </Link>
   );
 }
-const RedLink = forwardRef(CustomLink);
