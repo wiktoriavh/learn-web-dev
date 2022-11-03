@@ -19,7 +19,7 @@ const beginner: Source = {
       url: 'https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web',
       by: 'MDN',
       description:
-        "Getting started with the web is a concise series introducing you to the practicalities of web development.",
+        'Getting started with the web is a concise series introducing you to the practicalities of web development.',
     },
     {
       name: 'Front End Developer Learning Path',
@@ -361,7 +361,49 @@ const additional: Source = {
   ],
 };
 
+const basicsOfInternet: Source = {
+  type: 'Basics of the Internet',
+  entries: [
+    {
+      name: 'What is the World Wide Web?',
+      url: 'https://www.britannica.com/topic/World-Wide-Web',
+      by: 'Britannica',
+    },
+    {
+      name: 'Introduction to Domain Name System (DNS)',
+      url: 'https://www.cloudflare.com/en-gb/learning/dns/what-is-dns/',
+      by: 'CloudFlare',
+    },
+    {
+      name: 'Indepth explanation of the DNS',
+      url: 'https://www.techtarget.com/searchnetworking/definition/domain-name-system',
+      by: 'Tech Target',
+    },
+    {
+      name: 'Introduction to the Intenet Protocol (IP)',
+      url: 'https://www.cloudflare.com/en-gb/learning/network-layer/internet-protocol/',
+      by: 'CloudFlare',
+    },
+    {
+      name: 'Definitions of different type of Protocols',
+      url: 'https://www.geeksforgeeks.org/types-of-internet-protocols/',
+      by: 'Geeks For Geeks',
+    },
+    {
+      name: 'Internal Operations of Browser Engines',
+      url: 'https://web.dev/howbrowserswork/',
+      by: 'web.dev',
+    },
+    {
+      name: 'Web Standards: the what, the why, and the how?',
+      url: 'https://www.smashingmagazine.com/2019/01/web-standards-guide/',
+      by: 'Smashing',
+    },
+  ],
+};
+
 export const sources: Source[] = [
+  basicsOfInternet,
   beginner,
   intermediateDeepen,
   intermediateStatic,
