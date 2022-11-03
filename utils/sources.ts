@@ -265,6 +265,10 @@ const advancedStates: Source = {
       url: 'https://zustand.js.org/',
       by: 'Zustand',
     },
+    {
+      name: 'Pinia',
+      url: 'https://pinia.vuejs.org/',
+      by: 'Vue'
   ],
 };
 
