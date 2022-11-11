@@ -1,24 +1,39 @@
 import Link from 'next/link';
 
-import styles from './Card.module.css';
 import type { CardProps } from './types';
 
-export function Card({ title, description, url }: CardProps): JSX.Element {
+// https://www.1001fonts.com/pt-serif-font.html
+
+export function Card({
+  title,
+  resources,
+  path,
+  difficulty,
+}: CardProps): JSX.Element {
+  console.log(resources);
   return (
-    <div className={`${styles.cardBelow} rounded-md h-36 p-[1px] group`}>
-      <Link
-        href={url}
-        className={`${styles.card} bg-white w-full h-full flex flex-col gap-2 py-2 px-3 rounded-md`}
-      >
-        <span className="text-base font-bold flex-1 group-hover:underline underline-offset-4">
-          {title}
-        </span>
-        <p
-          className={`${styles.description} text-sm h-fit overflow-hidden text-ellipsis flex-1`}
-        >
-          {description}
-        </p>
-      </Link>
+    <div className="rounded-md bg-black-100 text-black-900 overflow-hidden">
+      <div className="p-5 bg-black-800 text-black-100 w-full">
+        <div className="w-full flex justify-between font-mono text-sm">
+          <span>Path 0</span>
+          <span>Beginner</span>
+        </div>
+        <h3 className="text-lg font-bold">{title}</h3>
+      </div>
+      <ul className="list-disc p-6 ml-6 marker:text-pink-500 gap-2 flex flex-col">
+        {resources.map((item) => {
+          return (
+            <li key={item.name}>
+              <Link
+                href={item.url}
+                className="hover:underline underline-offset-4 "
+              >
+                {item.name}
+              </Link>
+            </li>
+          );
+        })}
+      </ul>
     </div>
   );
 }

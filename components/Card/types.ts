@@ -1,5 +1,8 @@
+import type { Entry } from '~/sources';
+
 export type CardProps = {
   title: string;
-  description: string;
-  url: string;
-}
+  resources: Entry[];
+  path?: number;
+  difficulty: number;
+};
