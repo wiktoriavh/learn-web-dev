@@ -13,6 +13,26 @@ export type Source = {
   difficulty: number;
 };
 
+export type Page = {
+  title: string;
+  url: string;
+};
+
+export type Chapter = {
+  title: string;
+  difficulty: number;
+  pages: Page[];
+};
+
+export type Path = {
+  title: string;
+  number: number;
+  description: string;
+  chapters: Chapter[];
+};
+
+
+
 const beginner: Source = {
   type: 'Beginner: Start Here',
   path: 0,
