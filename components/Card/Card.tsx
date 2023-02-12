@@ -5,8 +5,6 @@ import { AdvancedIcon } from '@/Icon/AdvancedIcon';
 import { BeginnerIcon } from '@/Icon/BeginnerIcon';
 import { IntermediateIcon } from '@/Icon/IntermediateIcon';
 
-// https://www.1001fonts.com/pt-serif-font.html
-
 const DIFFICULTY: Record<number, string> = {
   0: 'Beginner',
   1: 'Intermediate',
@@ -14,20 +12,25 @@ const DIFFICULTY: Record<number, string> = {
 };
 
 function DifficultyIcon({ difficulty }: { difficulty: number }) {
-  if (difficulty === 2) {
-    return <AdvancedIcon />;
+  switch (difficulty) {
+    case 2: {
+      return <AdvancedIcon />;
+    }
+    case 1: {
+      return <IntermediateIcon />;
+    }
+
+    default: {
+      return <BeginnerIcon />;
+    }
   }
-  if (difficulty === 1) {
-    return <IntermediateIcon />;
-  }
-  return <BeginnerIcon />;
 }
 
 export function Card({
   title,
-  resources,
   path,
   difficulty,
+  pages,
 }: CardProps): JSX.Element {
   return (
     <div className="rounded-md text-black-900 overflow-hidden">
@@ -41,14 +44,14 @@ export function Card({
         <h3 className="text-lg font-bold">{title}</h3>
       </div>
       <ul className="list-disc p-6 rounded-b-md marker:text-pink-500 gap-2 flex flex-col bg-black-100">
-        {resources.map((item) => {
+        {pages.map((item) => {
           return (
-            <li key={item.name} className="ml-4">
+            <li key={item.title} className="ml-4">
               <Link
                 href={item.url}
                 className="hover:underline underline-offset-4 "
               >
-                {item.name}
+                {item.title}
               </Link>
             </li>
           );
