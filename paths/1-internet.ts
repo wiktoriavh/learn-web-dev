@@ -62,7 +62,7 @@ const CHAPTER_DNS: Chapter = {
 
 export const PATH_Internet: Path = {
   title: 'Internet',
-  number: 0,
+  number: 1,
   description: 'Learn the basics of the internet and how it works.',
   chapters: [
     CHAPTER_WorldWideWeb,
