@@ -1,5 +1,8 @@
+import type { Page } from '~/sources';
+
 export type CardProps = {
   title: string;
-  description: string;
-  url: string;
-}
+  pages: Page[];
+  path: number;
+  difficulty: number;
+};

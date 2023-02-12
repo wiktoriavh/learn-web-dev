@@ -9,17 +9,41 @@ export type Source = {
   type: string;
   description?: string;
   entries: Entry[];
+  path: number;
+  difficulty: number;
 };
+
+export type Page = {
+  title: string;
+  url: string;
+};
+
+export type Chapter = {
+  title: string;
+  difficulty: number;
+  pages: Page[];
+};
+
+export type Path = {
+  title: string;
+  number: number;
+  description: string;
+  chapters: Chapter[];
+};
+
+
 
 const beginner: Source = {
   type: 'Beginner: Start Here',
+  path: 0,
+  difficulty: 0,
   entries: [
     {
       name: 'Getting Started with the Web',
       url: 'https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web',
       by: 'MDN',
       description:
-        "Getting started with the web is a concise series introducing you to the practicalities of web development.",
+        'Getting started with the web is a concise series introducing you to the practicalities of web development.',
     },
     {
       name: 'Front End Developer Learning Path',
@@ -72,6 +96,8 @@ const beginner: Source = {
 
 const intermediateDeepen: Source = {
   type: 'Intermediate: Deepen Your Knowledge',
+  path: 0,
+  difficulty: 1,
   entries: [
     {
       name: 'Learn everything about JavaScript',
@@ -123,6 +149,8 @@ const intermediateDeepen: Source = {
 
 const intermediateStatic: Source = {
   type: 'Intermediate: Deployment to Static Hosting',
+  path: 0,
+  difficulty: 1,
   entries: [
     {
       name: 'What is Static Hosting',
@@ -159,6 +187,8 @@ const intermediateStatic: Source = {
 
 const intermediateManaged: Source = {
   type: 'Intermediate: Deployment to Managed Hosting',
+  path: 0,
+  difficulty: 1,
   entries: [
     {
       name: 'What is Managed Hosting',
@@ -200,6 +230,8 @@ const intermediateManaged: Source = {
 
 const advancedFrameworks: Source = {
   type: 'Advanced: Frameworks',
+  path: 0,
+  difficulty: 1,
   description:
     'Frameworks are ordered in job availability, but this is largely dependent on where you live.',
   entries: [
@@ -254,6 +286,8 @@ const advancedFrameworks: Source = {
 // list for redux and ci/cd
 const advancedStates: Source = {
   type: 'Advanced: State Management',
+  path: 0,
+  difficulty: 1,
   entries: [
     {
       name: 'Redux Toolkit',
@@ -269,12 +303,14 @@ const advancedStates: Source = {
       name: 'Pinia',
       url: 'https://pinia.vuejs.org/',
       by: 'Vue',
-    }
+    },
   ],
 };
 
 const advancedCiCd: Source = {
   type: 'Advanced: CI/CD',
+  path: 0,
+  difficulty: 2,
   entries: [
     {
       name: 'What is CI/CD',
@@ -306,6 +342,8 @@ const advancedCiCd: Source = {
 
 const usefullTools: Source = {
   type: 'Useful Tools',
+  path: 0,
+  difficulty: 2,
   entries: [
     {
       name: 'React Developer Tools for Chromium',
@@ -347,6 +385,8 @@ const usefullTools: Source = {
 
 const additional: Source = {
   type: 'Additional',
+  path: 0,
+  difficulty: 2,
   entries: [
     {
       name: 'How to ask good questions',
